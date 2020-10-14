@@ -156,7 +156,8 @@ ul {
     background-color: var(--section-background-color);
 }
 
-.filter-list .button.filter:hover {
+.filter-list .button.filter:hover,
+.filter-list .button.filter:focus {
     color: var(--header-background-color);
     background-color: var(--accent-color);
 }
