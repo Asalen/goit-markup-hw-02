@@ -1,7 +1,7 @@
-/* цвет основного текста #212121 */
+/* цвет основного текста #757575 */
 
 
-/* вторичный цвет текста #757575 */
+/* вторичный цвет текста #212121 */
 
 
 /*  акцент #2196F3 */
@@ -10,13 +10,157 @@
 /* белый #FFFFFF */
 
 
+/* черный #000000 */
+
+
 /* цвет контактов в футере rgba(255, 255, 255, 0.6) */
 
 
 /* основной цвет фона #E5E5E5  */
 
 
-/* 2й цвет фона #2F303A */
+/* вторичный цвет фона #2F303A */
 
 
-/* 3й цвет фона #F5F4FA */
+/* цвет фона команды #F5F4FA */
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --header-background-color: #FFFFFF;
+    --some-text-color: #000000;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+    --main-background-color: #E5E5E5;
+    --secondery-background-color: #2F303A;
+    --section-background-color: #F5F4FA;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--main-background-color);
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Logo */
+
+.logo {
+    color: var(--some-text-color);
+}
+
+.logo-accent {
+    color: var(--accent-color);
+}
+
+
+/*  Site-nav, Site-cont */
+
+.site-nav .link {
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-cont .link:hover,
+.site-cont .link:focus {
+    color: var(--accent-color);
+}
+
+.site-cont .link {
+    color: var(--primary-text-color);
+}
+
+
+/* Hero */
+
+.hero {
+    background-color: var(--secondery-background-color);
+}
+
+.hero-title {
+    color: var(--header-background-color);
+}
+
+.header {
+    background-color: var(--header-background-color);
+}
+
+
+/* Section */
+
+.section-title {
+    color: var(--title-text-color);
+}
+
+
+/* Features */
+
+.feature-list .title {
+    color: var(--title-text-color);
+}
+
+
+/* Team */
+
+.team {
+    background-color: var(--section-background-color);
+}
+
+.card {
+    background-color: var(--header-background-color);
+}
+
+.team-list .title {
+    color: var(--title-text-color);
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--secondery-background-color);
+}
+
+.footer .footer-link,
+.address {
+    color: var(--header-background-color);
+}
+
+.address .address-link {
+    color: var(--footer-text-color);
+}
+
+.address .address-link:hover,
+.address .address-link:focus {
+    color: var(--accent-color);
+}
+
+
+/* Button */
+
+.button.primary {
+    color: var(--header-background-color);
+    background-color: var(--accent-color);
+}
+
+.button.filter {
+    color: var(--title-text-color);
+    background-color: var(--section-background-color);
+}
+
+.filter-list .button.filter:hover,
+.filter-list .button.filter:focus {
+    color: var(--header-background-color);
+    background-color: var(--accent-color);
+}
+
+
+/* Progects*/
+
+.progect-list .title {
+    color: var(--title-text-color);
+}
